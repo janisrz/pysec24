@@ -76,4 +76,22 @@ print(my_list)
 del my_list[1:3]
 print(my_list) # Output: [1, 5]
 
-# Uzdevums nav pabeigts, vēl būs Dictionary, Set un Tuple
+# 3.2 Tuple
+my_tuple = ("abols", "kirsis", "datele", "banans") # Creating a tuple
+print(my_tuple)
+# Accessing elements using indexing
+first_element = my_tuple[0]
+print(first_element) # Output: abols
+second_element = my_tuple[1]
+print(second_element) # Output: kirsis
+
+tuple_lengt = len(my_tuple) #Getting the lenght of the tuple
+print(len(my_tuple))
+
+my_list = list(my_tuple) # Converting the tuple to a list
+print(my_list)
+
+my_set = set(my_tuple) # Converting the tuple to a set
+print(my_set) # List un Set atšķiras iekavas [List] un {Set}
+
+# Uzdevums nav pabeigts, vēl būs Dictionary un Set
