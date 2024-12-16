@@ -94,4 +94,53 @@ print(my_list)
 my_set = set(my_tuple) # Converting the tuple to a set
 print(my_set) # List un Set atšķiras iekavas [List] un {Set}
 
-# Uzdevums nav pabeigts, vēl būs Dictionary un Set
+# 3.3 Set
+my_list = ["Janis", "Karlis", "Peteris", "Uldis"] # Creating a list
+my_set = set(my_list) # Converting the list to a set
+print(my_set)
+
+my_set = {"Linda", "Laura", "Vilma", "Jolita"} # Creating a set
+my_list = list(my_set) # Converting the set to a list
+print(my_list)
+
+set_a = {"Valmiera", "Bauska", "Skrunda"}
+set_b = {"Saldus", "Ogre", "Salaspils"}
+union_set = set_a | set_b # Union of set_a and set_b
+print(union_set)
+
+set_a = {"Valmiera", "Bauska", "Alsunga", "Skrunda"} #added Alsunga
+set_b = {"Alsunga", "Saldus", "Ogre", "Salaspils"} #added Alsunga
+intersection_set = set_a & set_b # Intersection of set_a and set_b
+print(intersection_set) # Output {'Alsunga'}
+
+set_a = {"Valmiera", "Alsunga", "Bauska"}
+set_b = {"Alsunga", "Bauska", "Ogre"}
+difference_set = set_a - set_b
+print(difference_set) # Output {'Valmiera'}
+
+# 3.4 Dictionary
+
+# Creating a dictionary
+my_dict = {
+    "vards": "Aldis",
+    "vecums": 50,
+    "pilseta": "Valmiera",
+    "amats": "Direktors"
+}
+items = my_dict.items() # Get Tuple of items
+print(items)
+
+keys = my_dict.keys() # Get List of keys
+print(keys)
+
+values = my_dict.values() # Get List of values
+print(values)
+
+vards = my_dict.get("vards") # Get a particular item
+print(vards) # Output Aldis
+
+del my_dict["vecums"] # Deleting one item
+print(my_dict) # Output - nav vecums
+
+my_dict.clear() # All items
+print(my_dict) # Output {}
