@@ -227,3 +227,38 @@ for R in range(1,12, 1):
 
 for R in range(12, 0, -2):
     print(R) # Output samazinās pa 2 sākot no 12
+
+# MD_5
+
+class Auto:
+    def __init__(self, marka, modelis, gads): # Attributes for car
+        self.marka = marka
+        self.modelis = modelis
+        self.gads = gads
+    
+    def display_info(self): # To display Auto info
+        return f"Auto: {self.marka} {self.modelis} {self.gads}"
+    
+class Persona:
+    def __init__(self, vards, vecums, dzimums, auto): # Attributes for Persona
+        self.vards = vards
+        self.vecums = vecums
+        self.dzimums = dzimums
+        self.auto = auto
+    
+    def greet(self): # To display a greeting
+        return f"Sveiciens, mans vards ir {self.vards}!"
+    
+    def dzimsanas_gads(self, gads_tagad):
+        return gads_tagad - self.vecums
+    
+    def display_info(self):
+        return f"vards: {self.vards}\nvecums: {self.vecums}\ndzimums: {self.dzimums}\n{self.auto.display_info()}"
+
+my_auto = Auto("Toyota", "Corolla", 2021)
+
+persona1 = Persona("Jānis", 50, "Vīrietis", my_auto)
+
+print(persona1.greet()) # Output: Sveiciens, mans vards ir Janis!
+print(f"Dzimsanas gads: {persona1.dzimsanas_gads(2024)}") # Output: Dzimsanas gads: 1974
+print(persona1.display_info())
