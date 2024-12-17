@@ -144,3 +144,86 @@ print(my_dict) # Output - nav vecums
 
 my_dict.clear() # All items
 print(my_dict) # Output {}
+
+# MD_4
+# 4.1 If Statement
+
+vecums = 26 # Define the variable
+if vecums == 6: # False
+    print("Tu esi 6 gadus jauns.")
+    print("Tu esi bērns.")
+elif vecums == 26: # True
+    print("Tu esi 26 gadus jauns.")
+    print("Tu esi jaunietis.")
+elif vecums == 96: # False
+    print("Jūs esat 96 gadus vecs.")
+    print("Jūs esat seniors.")
+else:
+    print("Tavs vecums neatbilst nosacījumiem.") # Else condition neizpildās, jo vecums ir 26, kas ir True.
+
+print(vecums == 6) # Output False
+print(vecums == 26) # Output True
+print(vecums == 96) # Output False
+
+vecums = 50 # Lai izpildītos else condition, vecums samainīts uz 50
+if vecums == 6: # False
+    print("Tu esi 6 gadus jauns.")
+    print("Tu esi bērns.")
+elif vecums == 26: # True
+    print("Tu esi 26 gadus jauns.")
+    print("Tu esi jaunietis.")
+elif vecums == 96: # False
+    print("Jūs esat 96 gadus vecs.")
+    print("Jūs esat seniors.")
+else:
+    print("Tavs vecums neatbilst nosacījumiem.")
+
+print(vecums == 50) # Output: Tavs vecums neatbilst nosacījumiem. True
+
+# 4.2 While Loops
+
+egles = 0 # Variable
+
+while egles < 10:
+    print(f"Egles ir {egles}")
+
+    if egles == 3:
+        print("Egles ir 3, laid tālāk")
+        pass
+
+    if egles == 5:
+        print("Egles ir 5, turpini")
+        egles += 1
+        continue
+
+    if egles == 8:
+        print("Egles ir 8, stop")
+        break
+
+    egles += 1
+
+else:
+    print("Egles skaits 10, aplis noslēgts")
+
+print("Aplis noslēgts")
+
+# 4.3 For loops
+
+for saraksts in [1, 'a', 'Janis']:
+    print(saraksts)
+
+for saraksts in [('Pitons', 'programma'), ('drošības', 'testētājiem')]:
+    print(saraksts)
+
+for saraksts in [1, 2, 3]:
+    print(saraksts)
+else:
+    print("Aizpildīts")
+
+# 4.4 Emulating C style FOR Loops
+
+for R in range(1,12, 1):
+    print(R) # Output no 1 līdz 11
+
+for R in range(12, 0, -2):
+    print(R) # Output samazinās pa 2 sākot no 12
