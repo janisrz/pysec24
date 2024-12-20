@@ -1,4 +1,7 @@
-# pirmais mājasdarbs
+# MD_1
+
+print('\n\nMājas darbs Nr.1')
+
 # Uzd. samainīt versijas:
 # 1. terminālī: py -0 būs redzamas pieejamās versijas
 # 1.1. ar * esošā būs noklusējuma. Man ir -V:3.13*; -V:3.11; -V3.10
@@ -11,6 +14,9 @@
 # 2.4. redzu, ka var atkārtot līdzīgas darbības kā pirmajā punktā.
 
 # MD_2
+
+print('\n\nMājas darbs Nr.2')
+
 # pip install virtualenv
 # python.exe -m pip install --upgrade pip
 # python -m venv myenv2
@@ -28,6 +34,9 @@
 # pip freeze > requirements.txt
 
 # MD_3
+
+print('\n\nMājas darbs Nr.3')
+
 # 3.1. Lists
 # funkcija len() 
 my_list = [1, 2, 3, 4, 5]
@@ -146,6 +155,9 @@ my_dict.clear() # All items
 print(my_dict) # Output {}
 
 # MD_4
+
+print('\n\nMājas darbs Nr.4')
+
 # 4.1 If Statement
 
 vecums = 26 # Define the variable
@@ -230,6 +242,8 @@ for R in range(12, 0, -2):
 
 # MD_5
 
+print('\n\nMājas darbs Nr.5')
+
 class Auto:
     def __init__(self, marka, modelis, gads): # Attributes for car
         self.marka = marka
@@ -262,3 +276,21 @@ persona1 = Persona("Jānis", 50, "Vīrietis", my_auto)
 print(persona1.greet()) # Output: Sveiciens, mans vards ir Janis!
 print(f"Dzimsanas gads: {persona1.dzimsanas_gads(2024)}") # Output: Dzimsanas gads: 1974
 print(persona1.display_info())
+
+# MD_6
+
+print('\n\nMājas darbs Nr.6')
+
+from connections_MD_6 import wifi   # Output: Connections package is being initialised! 
+wifi.connect_with_wifi()            # Output: Connected through wifi!
+
+from connections_MD_6 import mobile
+mobile.connect_with_mobile_data()   # Output: Connected through mobile data!
+
+from matematika_MD_6_1 import dati  #Output: Piemēri ar saskaitīšanu, atņemšanu, reizināšanu un dalīšanu
+
+print(dati.add(5, 3))               # Output: 8
+print(dati.subtract(5, 3))          # Output: 2
+print(dati.multiply(5, 3))          # Output: 15
+print(dati.divide(5, 3))            # Output: 1.6666666666666667
+print(dati.divide(5, 0))            # Output: Ar nulli nedala
