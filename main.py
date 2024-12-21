@@ -294,3 +294,46 @@ print(dati.subtract(5, 3))          # Output: 2
 print(dati.multiply(5, 3))          # Output: 15
 print(dati.divide(5, 3))            # Output: 1.6666666666666667
 print(dati.divide(5, 0))            # Output: Ar nulli nedala
+
+# MD_7
+
+print('\n\nMājas darbs Nr.7')
+
+# Izņēmuma piemēri Pitonā (iebūvēto ir daudz vairāk). Te norādu: IndexError, KeyError, NameError un ValueError
+
+list = [1, 2, 3]
+try:
+    print(list[10])                 # Output: IndexError
+except IndexError:
+    print("IndexError: list index out of range")
+
+
+d = {'a': 1}
+try:
+    print(d['a'])                   # Output: 1 (strādā)
+    print(d['b'])                   # Output: KeyError
+except KeyError:
+    print("KeyError")
+
+
+try:
+    pritn('Janis') # Output: NameError
+except NameError:
+    print("NameError: Vai domāji 'print'?")
+
+try:
+    koki = 50                       # Output: būs "Kopumā ir 50", jo norādītā vērtība iekļaujas
+    if koki < 1 or koki > 100:
+        raise ValueError("Kokiem jābūt no 1 līdz 100.")
+    print(f"Kopumā ir {koki}")
+except ValueError as e:
+    print(f"Nepareizi norādīts koku skaits: {e}")
+
+
+try:
+    koki = 122                      # Output: būs "Nepareizi norādīts koku skaits: Kokiem jābūt no 1 līdz 100."
+    if koki < 1 or koki > 100:
+        raise ValueError("Kokiem jābūt no 1 līdz 100.")
+    print(f"Kopumā ir {koki}")
+except ValueError as e:
+    print(f"Nepareizi norādīts koku skaits: {e}")
