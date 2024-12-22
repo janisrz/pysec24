@@ -281,7 +281,8 @@ print(persona1.display_info())
 
 print('\n\nMājas darbs Nr.6')
 
-from connections_MD_6 import wifi   # Output: Connections package is being initialised! 
+from connections_MD_6 import wifi
+import pip   # Output: Connections package is being initialised! 
 wifi.connect_with_wifi()            # Output: Connected through wifi!
 
 from connections_MD_6 import mobile
@@ -337,3 +338,12 @@ try:
     print(f"Kopumā ir {koki}")
 except ValueError as e:
     print(f"Nepareizi norādīts koku skaits: {e}")
+
+# MD_8
+
+print('\n\nMājas darbs Nr.8')
+
+print("Skatīt failu: read_usb_logs.py")
+
+print("Tur bus Output:# No USB related logs found, jo USB pēc būtības nelietoju")
+
