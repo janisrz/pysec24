@@ -352,3 +352,9 @@ print("Tur bus Output:# No USB related logs found, jo USB pēc būtības nelieto
 print('\n\nMājas darbs Nr.9')
 
 print("Skatit failu MD_9.py")
+
+# MD_10
+
+print('\n\nMājas darbs Nr.10')
+
+print("Skatit failu MD_10.py")
