@@ -318,7 +318,7 @@ except KeyError:
 
 
 try:
-    pritn('Janis') # Output: NameError
+    pritn('Janis') # type: ignore # Output: NameError
 except NameError:
     print("NameError: Vai domāji 'print'?")
 
@@ -347,3 +347,8 @@ print("Skatīt failu: read_usb_logs.py")
 
 print("Tur bus Output:# No USB related logs found, jo USB pēc būtības nelietoju")
 
+# MD_9
+
+print('\n\nMājas darbs Nr.9')
+
+print("Skatit failu MD_9.py")

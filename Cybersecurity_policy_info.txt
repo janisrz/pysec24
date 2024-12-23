@@ -1,0 +1,19 @@
+Directory Listing:
+CIS_Controls__v8.1_Guide__2024_0801.pdf
+Cyber Killchain.png
+CybersecurityPolicy.pdf
+Cybersecurity_policy_info.txt
+Kiberdrošības politika - 14. Sept - 1. Lekcija-20240914_094808-Meeting Transcript
+Kiberdrošības Politika - Mērķi un Nodevumi.pdf
+MD_1
+  Apskats par MK noteikumi par minimajalam kiberdrošības prasībām_Jānis Rāzna_11.10.2024..pdf
+  Apskats par MK noteikumi par minimajalam kiberdrošības prasībām_Jānis Rāzna_11.10.2024..pptx
+MD_2
+  Kiberdrošības politikas ieviešanas plāns_J.Rāzna_26.10.2024..docx
+  Kiberdrošības politikas ieviešanas plāns_J.Rāzna_26.10.2024..pdf
+
+File Stats:
+size: 649
+Creation time: Sun Dec 22 22:02:09 2024
+Last Modification time: Mon Dec 23 18:08:55 2024
+File type: File
