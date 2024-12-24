@@ -358,3 +358,9 @@ print("Skatit failu MD_9.py")
 print('\n\nMājas darbs Nr.10')
 
 print("Skatit failu MD_10.py")
+
+# MD_11
+
+print('\n\nMājas darbs Nr.11')
+
+print("Skatit failu MD_11.py")
