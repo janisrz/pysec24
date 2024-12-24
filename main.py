@@ -345,8 +345,6 @@ print('\n\nMājas darbs Nr.8')
 
 print("Skatīt failu: read_usb_logs.py")
 
-print("Tur bus Output:# No USB related logs found, jo USB pēc būtības nelietoju")
-
 # MD_9
 
 print('\n\nMājas darbs Nr.9')

@@ -1,15 +1,19 @@
 import win32evtlog
 
-def read_usb_logs():
+def read_usb_logs(logtype='System'):
     server = 'localhost'
-    logtype = 'System'
-    hand = win32evtlog.OpenEventLog(server, logtype)
     flags = win32evtlog.EVENTLOG_BACKWARDS_READ|win32evtlog.EVENTLOG_SEQUENTIAL_READ
+    hand = win32evtlog.OpenEventLog(server, logtype)
     total = win32evtlog.GetNumberOfEventLogRecords(hand)
 
     print(f"Total records in {logtype} = {total}")
-
-    events = win32evtlog.ReadEventLog(hand, flags, 0)
+    print(f"Total records in {logtype} on server {server} = {total}")
+    events = []
+    while True:
+        event_batch = win32evtlog.ReadEventLog(hand, flags, 0)
+        if not event_batch:
+            break
+        events.extend(event_batch)
 
     usb_logs = extract_usb_logs(events)
     
@@ -36,7 +40,7 @@ def extract_usb_logs(events):
                             'EventType': event.EventType,
                             'EventDescription': insert
                         })
-        except Exception:
+        except AttributeError:
             continue
     return usb_logs
 
@@ -47,12 +51,17 @@ def print_usb_logs(usb_logs):
         print(f"Time Generated: {log['TimeGenerated']}")
         print(f"Source Name: {log['SourceName']}")
         print(f"Event ID: {log['EventID']}")
-        print(f"Event Type: {log['EventType']}")
-        print(f"Event Description: {log['EventDescription']}")
-        print("-" * 20)
+    print(f"Event Type: {log['EventType']}")
+    print(f"Event Description: {log['EventDescription']}")
+    print("-" * 20)
+    print()
+    print(f"Event Description: {log['EventDescription']}")
+    print("-" * 20)
 
-read_usb_logs()
+if __name__ == "__main__":
+    read_usb_logs()
+    read_usb_logs('System')
 
-# Output: Total records in System = 38872
-# Output: No USB related logs found
+# Output: Total records in System = 38924
+# Output: Daudz ieraksti
 
