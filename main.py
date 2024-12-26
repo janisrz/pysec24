@@ -362,3 +362,13 @@ print("Skatit failu MD_10.py")
 print('\n\nMājas darbs Nr.11')
 
 print("Skatit failu MD_11.py")
+
+# MD_12
+
+print('\n\nMājas darbs Nr.12')
+
+print("Skatit failu MD_12.py")
+print('\nKā arī skatīt failu MD_12_1.py, kas ir papildinājums MD_12.py" ar papildus informāciju.')
+print('\nKā arī skatīt failu MD_12_2.py, kas ir papildinājums MD_12.py"\n'
+      'ar mēģinājumu faila lejupielādei, bet nesekmīgi,\n'
+      'proti: HTTP Error 403: Forbiden.')
