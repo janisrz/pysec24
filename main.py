@@ -372,3 +372,23 @@ print('\nKā arī skatīt failu MD_12_1.py, kas ir papildinājums MD_12.py" ar p
 print('\nKā arī skatīt failu MD_12_2.py, kas ir papildinājums MD_12.py"\n'
       'ar mēģinājumu faila lejupielādei, bet nesekmīgi,\n'
       'proti: HTTP Error 403: Forbiden.')
+
+# MD_13
+
+print('\n\nMājas darbs Nr.13')
+
+print("Skatit failu MD_13.py")              # Output: An error occured: 429 Client Error: Too Many Requests...
+
+print('Skatit failu MD_13_1.py')            # Output: Mēģinājums izvairīties no 429 Client Error: Too Many Requests... Nesekmīgs.
+
+print('Skatit failu MD_13_2.py')            # Output: Atlasīti ftp pēc manas izvēles.
+
+print('Skatit failu MD_13_3.py')            # Iekļauti 3 threads.
+
+print('Skatit failu MD_13_4.py')            # Pēc manas izvēles atlasīti 40 ftp un pārbaude vai ir sasniedzami.
+
+print('Skatīt failu MD_13_3_1_1.py')        # Pievienots, lai izveido ftp_results.txt priekš rezultātu saglabāšanas.
+
+print('Skatīt failu ftp_results.txt')       # Output: Saglabāti rezultāti no MD_13_3_1_1.py
+
+
