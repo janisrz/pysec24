@@ -391,4 +391,8 @@ print('Skatīt failu MD_13_3_1_1.py')        # Pievienots, lai izveido ftp_resul
 
 print('Skatīt failu ftp_results.txt')       # Output: Saglabāti rezultāti no MD_13_3_1_1.py
 
+# MD_14
 
+print('\n\nMājas darbs Nr.14')
+
+print("Skatit failu MD_14_1.py")
